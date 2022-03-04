@@ -8,6 +8,38 @@
  */
 public class PictureTester
 {
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture beach = new Picture("images/beach.jpg");
+    beach.explore();
+    beach.mirrorVerticalRightToLeft();
+    beach.explore();
+  }
+
+  public static void testMirrorHorizontal()
+  {
+    Picture beach = new Picture("images/beach.jpg");
+    beach.explore();
+    beach.mirrorHorizontal();
+    beach.explore();
+  }
+
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture beach = new Picture("images/beach.jpg");
+    beach.explore();
+    beach.mirrorHorizontalBotToTop();
+    beach.explore();
+  }
+
+  public static void testMirrorDiagonal()
+  {
+    Picture beach = new Picture("images/beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
+  }
+
   /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
@@ -86,11 +118,15 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+    //testMirrorVerticalRightToLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
+    testMirrorDiagonal();
     //testZeroBlue();
     //testKeepOnlyBlue();
     //testNegate();
     //testGrayscale();
-    testFixUnderwater();
+    //testFixUnderwater();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
